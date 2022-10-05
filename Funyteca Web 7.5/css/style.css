@@ -248,11 +248,12 @@ a:focus {
 /* end common style */
 
 /* about section */
-.about_section {
+.post_blog_section {
   text-align: right;
+  margin-right: 68.5px;
 }
 
-.about_section a {
+.post_blog_section a {
   background-color: #FF5151;
   color: #fefeff;
 }
