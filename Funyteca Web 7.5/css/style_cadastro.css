@@ -1,114 +1,140 @@
-/* geral */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color: #323232;
-    border: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-input, label{
-    display: block;
-    width: 100%;
-}
 
-input:focus, label:focus {
-    outline: none;
-}
-
-a {
-    color: #FF5151;
-}
 
 body{
-    padding-top: 1vh; /*view height -> 5% da tela*/
-    background: #5C74E9;
-}
-
-/*formulario*/
-
-#main-container {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-#main-container h1{
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.6rem;
-}
-
-form{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #F2F2F2,#5CB8E4, #5C74E9, #181818 );
+    background-size: 300%, 300%;
+    animation: colors 15s ease infinite;
+    padding: 20px;
 }
 
-.full-box{
-    flex: 1 1 100%;
-    position: relative;
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
-.half-box{
-    flex: 1 1 45%;
-    position: relative;
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
 }
 
-.spacing{
-    margin-right: 2.5%;
+.box{
+    display: flex;
+    width: 930px;
+}
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+.img-box img{
+    width: 100%;
+}
+.form-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
 }
 
-label{
+.form-box h2{
+    font-size: 30px;
+}
+
+.form-box p{
     font-weight: bold;
-    font-size: .8rem;
+    color: #3D3D3D;
 }
 
-input{
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: .9rem;
-    margin-bottom: 40px;
+.form-box p a{
+    color: #FF5151;
+    text-decoration: none;
 }
 
-input:focus{
-    border-color: #5C74E9;
+.form-box form{
+    margin: 20px 0;
 }
 
-input[type="submit"]{
-    background-color: #FF5151;
-    color: #fff;
-    border: none;
+.input-group{
+    margin-bottom: 15px;
+}
+
+.input-group label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
-    height: 40px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    transition: all 0.4s ease ;
+}
+
+.input-group input:focus{
+    border-color: #FF5151;
+}
+.input-group button{
+    width: 100%;
+    height: 47px;
+    background: #FF5151;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
     cursor: pointer;
-
+    font-size: 16px;
 }
-
-#agreement{
-    margin-right: 5px;
+@media (max-width:930px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
 }
-
-#agreement, #agreement-label{
-    display: inline-block;
-    width: auto;
-}
-
-/*validações */
-.error-validation{
-    color: #FF1A1A;
-    position: absolute;
-    top: 63px;
-    font-size: .8rem;
-}
-
-.template{
-    display: none;
+@media (max-width:500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
 }
 
