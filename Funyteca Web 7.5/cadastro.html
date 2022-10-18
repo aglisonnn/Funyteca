@@ -20,23 +20,23 @@
                 <p>Já é um membro do funnyteca? <a href="/Funyteca Web 7.5/login page.html"> Login </a></p>
 
                 <div class="input-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite o seu primeiro nome" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Digite o seu email" data-min-length="2" data-email-validate>
                 </div>
 
                 <div class="input-group">
-                    <label for="text">Sobrenome</label>
-                    <input type="text" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+                    <label for="text">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" data-required data-min-length="3" data-max-length="30">
                 </div>
 
                 <div class="input-group w50">
                     <label for="senha">Senha</label>
-                    <input type="password" id="Senha" placeholder="Digite sua senha" required>
+                    <input type="password" id="Senha" placeholder="Digite sua senha" data-password-validate data-required>
                 </div>
 
                 <div class="input-group w50">
                     <label for="Confirmarsenha">Confirmar senha</label>
-                    <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
+                    <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" data-equal="password">
                 </div>
 
                 <div class="input-group">
@@ -45,6 +45,7 @@
 
             </div>            
         </div>
-    
+    <p class="error-validation template"></p>
+    <script src="/Funyteca Web 7.5/js/jcadastro.js"></script>
     </body>
 </html>

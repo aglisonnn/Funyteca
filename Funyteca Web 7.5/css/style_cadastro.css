@@ -138,3 +138,15 @@ body{
     }
 }
 
+/*validações */
+.error-validation{
+    color: #FF1A1A;
+    position: absolute;
+    top: 63px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}
+
