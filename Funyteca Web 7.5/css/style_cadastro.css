@@ -107,7 +107,8 @@ body{
 .input-group input:focus{
     border-color: #FF5151;
 }
-.input-group button{
+
+input[type="submit"]{
     width: 100%;
     height: 47px;
     background: #FF5151;
@@ -119,6 +120,7 @@ body{
     cursor: pointer;
     font-size: 16px;
 }
+
 @media (max-width:930px) {
     .img-box{
         display: none;
