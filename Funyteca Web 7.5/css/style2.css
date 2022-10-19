@@ -1,161 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@300;500;800&display=swap');
 
-*{
-    margin: 0;
-    border: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-body{
-    background: linear-gradient(#5C74E9, rgb(77, 77, 238));
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #F2F2F2,#5CB8E4, #5C74E9, #181818 );
+    background-size: 300%, 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-button {
     display: flex;
     align-items: center;
-    justify-content: center;
-
 }
 
-main.container{
-    background: white;
-    max-width: 320px;
-    min-height: 40vh;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-main h2{
-    font-weight: 600;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-main h2::before{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 20px;
-    bottom: 3px;
-    left: 0;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #5C74E9, #5C74E9);
-}
-
- form{
-    display: flex;
-    flex-direction: column;
- }
-
-.input-field{
-    position: relative;
-}
-
-form .input-field:first-child {
-    margin-bottom: 1.5rem;
-}
-
-.input-field .underline::before{
-    content: '';
-    position: absolute;
-    height: 1px;
+.cadastro-button button {
     width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.input-field .underline::after{
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(45deg,#557EFF, #b8bbbb);
-    transform: scaleX(0);
-    transition: all .3s ease-in-out;
-    transform-origin: left;
-}
-
-.input-field input:focus ~ .underline::after{
-    transform: scaleX(1);
-}
-
-.input-field input{
-    outline: none;
-    font-size: 0.9rem;
-    color: rgba(0,0, 0, 0.7);
-    width: 100%;
-}
-
-.input-field input::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-}
-
-form input[ type="submit" ] {
-    margin-top: 2rem;
-    padding: 0.4rem;
-    background: linear-gradient(to left, #FF5151, #FF5151);
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #5C74E9;
+    padding: 0.62rem;
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    font-size: 0.93rem;
 }
 
-form input[ type="submit" ]:hover{
-    letter-spacing: 0.5px;
-    background: linear-gradient(to right, #FF5151, #FF5151 );
+.cadastro-button button:hover {
+    background-color: #6b63fff1;
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-.footer span{
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.footer .social-field {
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0,85rem;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.footer .social-field a i {
-    margin: 0 0.5rem;
-    width: 15px;
-}
-
-.footer .social-field a{
+.cadastro-button button a {
     text-decoration: none;
-    color: white;
+    font-weight: 500;
+    color: #fff
 }
 
-.footer .social-field.google {
-    background: linear-gradient(to right, #5C74E9, #5C74E9);
-}
-
-.account{
-    font-size: 0.85rem;
-    margin-top: 1rem;
-}
-
-.logo img{
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
     position: absolute;
-    margin-left: 45px;
-    top:20px;
-    
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.curso-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be
+}
+
+.login-button button {
+    width: 100%;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #5C74E9;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color:#6c63ff;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorInput {
+    border: 2px solid rgb(202, 44, 44) !important;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+}
+
+p{
+    font-size: 13px;
+    margin-top: 0.5rem;
+    text-align: center;
 }

@@ -9,43 +9,50 @@
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
     <title>Login form</title>
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="icon" href="funnytecca_logo.png">
 </head>
 
 <body>
-    <div class="logo">
-        <img src="images/funnytecca_logo.png">
-    </div>
-    <main class="container">
-        <h2>Login</h2>
-        <form action="">
-            <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Entre com seu usuário">
-                <div class="underline"></div>
-            </div>
-            <div class="input-field">
-                <input type="password" name="password" id="password" placeholder="Entre com sua senha">
-                <div class="underline"></div>
-            </div>
-
-            <input type="submit" value="Continue">
-        </form>
-
-        <div class="footer">
-            <span> Ou conecte com sua conta Google</span>
-            <div class="social-fields">
-                <div class="social-field google">
-                    <a href="#">
-                        <i class="fab fa-google"> </i> Entrar com o Google
-                    </a>
+    <div class="container">
+        <div class="form-image">
+            <img src="images/cadastro.png" alt="mulher sentada ao lado de um computador">
+        </div>  
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="account">
-                <p>Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
-            </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o seu email">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite a sua senha">
+                    </div>
+                </div>
+
+                <div class="login-button">
+                    <button id="login-button"><a href="#">Entrar</a></button>
+                </div>
+                <p>Ou</p>
+                <div class="cadastro-button">
+                    <button><a href="/cadastro.html">Cadastre-se</a></button>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </form>
         </div>
-    </main>
+    </div>
+
+    <script src="/Funyteca Web 7.5/js/jslogin.js"></script>
+
 </body>
 
 </html>
