@@ -3,3 +3,22 @@ body {
     padding: 0;
     align-items: center;
 }
+.btn-grid {
+ display: grid;
+ margin: 20px 0;
+ grid-template-columns: repeat(2, auto);
+ gap: 10px;
+}
+.btn {
+
+    background-color: hsl(hue, 100%, 30%);
+    color: black;
+}
+
+.start-btn, 
+ next-btn{
+font-size: 1.5rem;
+font-weight: bold;
+padding: 10px 20px;
+cursor: pointer;
+}
