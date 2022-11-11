@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <title>Login form</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="images/cadastro.png" alt="mulher sentada ao lado de um computador">
+        </div>  
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o seu email">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite a sua senha">
+                    </div>
+                </div>
+
+                <div class="login-button">
+                    <button id="login-button"><a href="#">Entrar</a></button>
+                </div>
+                <p>Ou</p>
+                <div class="cadastro-button">
+                    <button><a href="cadastro.html">Cadastre-se</a></button>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jslogin.js"></script>
+
+</body>
+
+</html>
