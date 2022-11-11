@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #5C74E9;
-    background: linear-gradient(45deg, #FF5151,#5CB8E4, #5C74E9, #181818 );
+    background: linear-gradient(45deg, #FF5151,#5CB8E4, #5C74E9, #FF5151 );
     background-size: 300%, 300%;
     animation: colors 15s ease infinite;
 }
