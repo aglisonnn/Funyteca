@@ -17,7 +17,7 @@
             <img src="images/cadastro.png" alt="mulher sentada ao lado de um computador">
         </div>  
         <div class="form">
-            <form action="#">
+            <form action="login.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Login</h1>
@@ -31,28 +31,24 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite a sua senha">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite a sua senha">
                     </div>
                 </div>
 
                 <div class="login-button">
-                    <button id="login-button"><a href="#">Entrar</a></button>
+                    <button type="submit" id="login-button"><a>Entrar</a></button>
                 </div>
                 <p>Ou</p>
                 <div class="cadastro-button">
-                    <button><a href="cadastro.html">Cadastre-se</a></button>
+                    <button><a href="cadastro.php">Cadastre-se</a></button>
                 </div>
-
+                </form>
                 <div class="forgot-password">
                     <a href="#">Esqueci minha senha</a>
                 </div>
-            </form>
         </div>
     </div>
-
-    <script src="js/jslogin.js"></script>
-
 </body>
 
 </html>

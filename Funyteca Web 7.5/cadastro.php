@@ -16,20 +16,19 @@
             <img src="images/minionsteca.png" alt="mulher sentada ao lado de um computador">
         </div>
         <div class="form">
-            <form id="formulario">
+            <form action="cadastrar.php" method="POST" id="formulario">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="/Funyteca Web 7.5/login page.html">Já possui uma conta? Logue aqui!</a></button>
+                        <button><a href="login page.php">Já possui uma conta? Logue aqui!</a></button>
                     </div>
                 </div>
-
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="firstname">Nome</label>
-                        <input id="nome" type="text" name="firstname" placeholder="Digite o nome de usuário">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o nome de usuário">
                     </div>
 
                     <div class="input-box">
@@ -38,8 +37,8 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite a sua senha">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite a sua senha">
                     </div>
 
                     <div class="input-box">
@@ -50,13 +49,12 @@
                 </div>
 
                 <div class="continue-button">
-                    <button id="continue-button"><a href="#">Continuar</a></button>
+                    <button type="submit" id="continue-button"><a href="#">Continuar</a></button>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="js/jcadastro.js"></script>
 </body>
 
 </html>
