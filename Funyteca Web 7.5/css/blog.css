@@ -1,0 +1,39 @@
+html, body {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(71, 87, 255) 0%, rgb(17, 28, 116) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cards {
+    width: 100%;
+    border-radius: 20px;
+    user-select: none;
+    display: block;
+    height: 0px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 6px;
+    backface-visibility: hidden;
+    padding-bottom: 56.25%;
+}
+
+.card_container {
+    width: 100%;
+    border-radius: 20px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    appearance: none;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
