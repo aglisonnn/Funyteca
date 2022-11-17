@@ -72,9 +72,37 @@
                                     <a class="nav-link" href="quizzes.html"> Quiz </a>
                                 </li>
 
-                                <li class="nat-item ">
-                                    <a class="nav-link" href="login page.html"> Perfil </a>
-                                 </li>
+                                <li class="nav-item ">
+                                    <div class="action">
+                                        <div class="profile" onclick="menuToggle();">
+                                            <img src="images/user.png" alt="">
+                                        </div>
+                                
+                                        <div class="menu">
+                                            <h3>
+                                                Nome da Pessoa
+                                                <div>
+                                                    Email da Pessoa
+                                                </div>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <span class="material-icons icons-size">person</span>
+                                                    <a href="#">Perfil</a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons icons-size">settings</span>
+                                                    <a href="#">Configurações</a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons icons-size">logout</span>
+                                                    <a href="#">Sair da conta</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
 
                             </ul>
                         </div>
@@ -283,6 +311,12 @@
             </p>
         </section>
         <!-- footer section -->
+        <script>
+            function menuToggle(){
+                const toggleMenu = document.querySelector('.menu');
+                toggleMenu.classList.toggle('active')
+            }
+        </script>
 
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
