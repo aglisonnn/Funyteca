@@ -13,6 +13,8 @@
     <meta name="author" content="" />
 
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     <title>Funyteca</title>
 
 
@@ -46,7 +48,7 @@
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="homepage.html">
                         <span>
               Funyteca
             </span>
@@ -70,7 +72,35 @@
                                 </li>
 
                                 <li class="nav-item ">
-                                    <a class="nav-link" href=""> Perfil </a>
+                                    <div class="action">
+                                        <div class="profile" onclick="menuToggle();">
+                                            <img src="images/user.png" alt="">
+                                        </div>
+                                
+                                        <div class="menu">
+                                            <h3>
+                                                Nome da Pessoa
+                                                <div>
+                                                    Email da Pessoa
+                                                </div>
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <span class="material-icons icons-size">person</span>
+                                                    <a href="#">Perfil</a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons icons-size">settings</span>
+                                                    <a href="#">Configurações</a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons icons-size">logout</span>
+                                                    <a href="#">Sair da conta</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -494,6 +524,12 @@
         </p>
     </section>
     <!-- footer section -->
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
