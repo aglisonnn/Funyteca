@@ -263,12 +263,12 @@ a:focus {
 
 /* admission section */
 
-.admission_sections a {
+.blog_sections a {
     background-color: #ffc107;
     color: #fefeff;
 }
 
-.admission_section a {
+.blog_section a {
     background-color: #BCBCBC;
     color: #fefeff;
 }
