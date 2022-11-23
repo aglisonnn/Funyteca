@@ -9,6 +9,7 @@
     box-shadow: 0px 2px 23px #26395338;
     box-sizing: 10px 20px;
     background-color: #ffc107;
+    flex-wrap: wrap;
 }
 
 .card{
