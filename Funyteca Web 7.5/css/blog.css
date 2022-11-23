@@ -23,6 +23,7 @@
     margin: 30px;
     float: left;
     border-color: #FF5151;
+    transition: 0.3s;
     
 }
 
@@ -58,6 +59,10 @@
     color: #dc3545;
     background-color: #FFF;
     font-family: "poppins", sans-serif;
+}
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
 }
 
 .mat-1{
