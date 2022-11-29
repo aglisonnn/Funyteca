@@ -8,12 +8,12 @@
 }
 
 body{
-    background: #ffc107;
+    background: #FF5151;
 }
 
 ::selection{
     color: #fff;
-    background: #ffc107;
+    background: #FF5151;
 }
 
 .start_btn,
@@ -40,7 +40,7 @@ body{
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #ffc107;
+    color: #FF5151;
     padding: 15px 30px;
     outline: none;
     border: none;
@@ -82,7 +82,7 @@ body{
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #ffc107;
+    color: #FF5151;
 }
 .info_box .buttons{
     height: 60px;
@@ -103,7 +103,7 @@ body{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #ffc107;
+    border: 1px solid #FF5151;
     transition: all 0.3s ease;
 }
 
@@ -173,7 +173,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #ffc107;
+    background: #FF5151;
 }
 
 section{
@@ -287,8 +287,8 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #ffc107;
-    border: 1px solid #ffc107;
+    background: #FF5151;
+    border: 1px solid #FF5151;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -323,7 +323,7 @@ footer button.show{
 
 .result_box .icon{
     font-size: 100px;
-    color: #ffc107;
+    color: #FF5151;
     margin-bottom: 10px;
 }
 
@@ -359,13 +359,13 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #ffc107;
+    border: 1px solid #FF5151;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
     color: #fff;
-    background: #ffc107;
+    background: #FF5151;
 }
 
 .buttons button.restart:hover{
@@ -373,13 +373,13 @@ footer button.show{
 }
 
 .buttons button.quit{
-    color: #ffc107;
+    color: #FF5151;
     background: #fff;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #ffc107;
+    background: #FF5151;
 }
 @media screen and (max-width:1200px){
     .info_box{
