@@ -381,3 +381,37 @@ footer button.show{
     color: #fff;
     background: #ffc107;
 }
+@media screen and (max-width:1200px){
+    .info_box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .info_box{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1200px){
+    .quiz_box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .quiz_box{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .result_box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .result_box{
+        width: 90%;
+    }
+}
