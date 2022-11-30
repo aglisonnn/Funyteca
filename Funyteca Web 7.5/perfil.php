@@ -58,9 +58,7 @@ $nome = $rows['nome'];
      
     <!-- This is link of adding small images
          which are used in the link section  -->
-    <script src="https://kit.fontawesome.com/704ff50790.js"
-        crossorigin="anonymous">
-    </script>
+    
 </body>
  
 </html>
