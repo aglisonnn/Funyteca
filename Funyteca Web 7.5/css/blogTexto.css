@@ -1,11 +1,11 @@
 .post-header{
     width: 100%;
     height: 500px;
-    background: #dc3545;
+    background: #FF5151;
 }
 
 .post-container{
-    max-width: 800px;
+    max-width: 750px;
     margin: auto;
     width: 100%;
     flex-wrap: wrap;
