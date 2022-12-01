@@ -50,14 +50,12 @@ $nome = $rows['nome'];
             </p>
  
  
-            <a class="effect effect-4" href="#homepage.php">
+            <a class="effect effect-4" href="homepage.php">
                 Voltar
             </a>
         </div>
     </div>
      
-    <!-- This is link of adding small images
-         which are used in the link section  -->
     
 </body>
  
