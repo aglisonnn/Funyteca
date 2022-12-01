@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    position: relative;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-item{
+    padding: 0 10px;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}

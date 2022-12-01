@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@300;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Assigning all the same properties to the body */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #FF5151,#5CB8E4, #5C74E9, #FF5151 );
+    background-size: 300%, 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+ 
+.container{
+    width: 20em;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+}
+ 
+.user-image{
+    padding: 3em 0;
+    background-image: linear-gradient(70deg,#5C74E9,#0083FD);
+}
+ 
+.user-image img{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow:  0 0.6em 1.8em ;
+    object-fit: cover;
+}
+ 
+.content{
+    color: #565656;
+    padding: 2.2em;
+}
+ 
+.name{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+ 
+.username{
+    font-size: 1em;
+    color: #000000;
+}
+ 
+.links{
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+ 
+a{
+    text-decoration: none;
+    color: #565656;
+    transition: all 0.3s;
+    font-size: 2em;
+    margin-right: 1.2em;
+}
+ 
+a:last-child{
+    margin: 0;
+}
+ 
+.insta:hover{
+    color:rgb(255, 70, 101);
+    transform: scale(2,2);
+}
+ 
+.git:hover{
+    color:rgb(0, 0, 0);
+    transform: scale(2,2);
+}
+ 
+.linkedin:hover{
+    color:rgba(4, 0, 253, 0.842);
+    transform: scale(2,2);
+}
+ 
+.facebook:hover{
+    color:rgb(4, 0, 255);
+    transform: scale(2,2);
+}
+ 
+.details{
+    margin-bottom: 1.8em;
+}
+ 
+ 
+/* CSS for messagin link */
+ 
+.effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    width: 100%;
+    background-image: linear-gradient(60deg,#5C74E9,#5C74E9);
+    font-size: 1.2em;
+    padding: 1em 3em;
+    border-radius: 5em;
+    overflow: hidden;
+}
+
+
+   

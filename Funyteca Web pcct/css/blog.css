@@ -1,0 +1,129 @@
+.containero{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 23px #26395338;
+    box-sizing: 10px 20px;
+    background-color: #ffc107;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #007bff;;
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px #26395338;
+    box-sizing: 10px 20px;
+    width: 270px;
+    height: 400px;
+    padding: 0px;
+    margin: 30px;
+    float: left;
+    border-color: #FF5151;
+    transition: 0.3s;
+    
+}
+
+.tittle{
+    font-size: 22px;
+    color: #FFF;
+}
+
+.topCard{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    width: 270px;
+    height: 100px;
+    color: #FFF;
+}
+
+.bottomCard{
+    padding: 20px;
+    font-size: 13px;
+    color: #FFF;
+}
+
+.titulo{
+    text-align: left;
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dc3545;
+    background-color: #FFF;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+}
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.mat-1{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJcSigzNAfwJfGSAZpw_xpG_ZY-BuU27FS3YTZhL2dnwOaM_Nhswj0WCr7K0DIWyBlfdY&usqp=CAU") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mat-2{
+    background: url("https://1.bp.blogspot.com/-HYk_CZbOCHI/YPXoFT1UAaI/AAAAAAAAF8g/hDpmJ4GwZNE_B7NmZmdjRfTZrpMaMXlTACLcBGAsYHQ/s1040/cartaz-s%25C3%25B3lidos-geom%25C3%25A9tricos%2B%25281%2529.JPG") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mat-3{
+    background: url("https://i.pinimg.com/236x/17/a2/81/17a28125ebf0baff6866c70bebb7ac16.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.port-1{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2xEv1J7PhkdviSK1GjCJ0OJ_itVGV7Ebs1BcdIudO3GvTltAHdlU1KOhsyJpy7rEuag&usqp=CAU") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.port-2{
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiANcAzi7TcRLioKphMrHCcUZ4OJHSR6rayNPUHcCoJY3ReYWk20GK_I3P9y7HZS09mztnF3Liw_F_2qZQom0n3G8jgAkoA4_-0-dbcJvkEdPLGwPVQPUxkCajj5VH7U7DFFT-P9G1RYsmVUOMKjAw2fwlHHh3_5Ek7L_1eGP6DA6VJ0hC5EtOAsT_U2g/s1280/atividades-aumentativo-diminutivo-grau-do-substantivo.png") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.port-3{
+    background: url("https://resumosnerd.com/wp-content/uploads/2021/04/sinonimos-e-antonimos.png") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.geofoto-1{
+    background: url("https://blog.academia.com.br/wp-content/uploads/2020/03/original-97598c6cb703970d1b96f4f65fb2e2b4.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.geofoto-2{
+    background: url("https://s1.static.brasilescola.uol.com.br/be/conteudo/images/gua.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.geofoto-3{
+    background: url("https://www.webventure.com.br/wp-content/uploads/2018/06/what4ever-1600x620.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
