@@ -41,7 +41,7 @@
                 </div>
                 <p>Ou</p>
                 <div class="cadastro-button">
-                    <button><a href="cadastro.php">Cadastre-se</a></button>
+                    <button><a href="cadastro.php">Cadastrar</a></button>
                 </div>
                 </form>
                 <div class="forgot-password">

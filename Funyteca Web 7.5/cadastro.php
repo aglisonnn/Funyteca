@@ -19,7 +19,7 @@
             <form action="cadastrar.php" method="POST" id="formulario">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastrar</h1>
                     </div>
                     <div class="login-button">
                         <button><a href="login page.php">Já possui uma conta? Logue aqui!</a></button>
