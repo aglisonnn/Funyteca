@@ -1,5 +1,5 @@
 # Funyteca
-Site para conclusão do curso
+Sistema para conclusão do curso
 
 https://github.com/douglasabnovato/quiz-app.git
 
