@@ -1,6 +1,6 @@
 <?php
  session_start();
-include('conexao.php');
+include(__DIR__ . '/../backend/conexao.php');
 $email = $_SESSION['email'];
 $sqlco = "SELECT nome from usuario where email = '$email'";
 $result = mysqli_query($conexao, $sqlco) or die("Erro".$mysqli_error($conexao)); 
@@ -12,7 +12,7 @@ $nome = $rows['nome'];
 <html lang="en">
  
 <head>
-    <link rel="stylesheet" href="css/perfilcss.css">
+    <link rel="stylesheet" href="../assets/css/perfil.css">
     <link rel="preconnect"
         href="https://fonts.googleapis.com">
 </head>
@@ -20,7 +20,7 @@ $nome = $rows['nome'];
 <body>
     <div class="container">
         <div class="user-image">
-            <img src="images/funnytecca_logo.png" alt="this image contains user-image">
+            <img src="../assets/images/funnytecca_logo.png" alt="this image contains user-image">
         </div>
  
         <div class="content">

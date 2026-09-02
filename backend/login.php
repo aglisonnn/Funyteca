@@ -1,9 +1,9 @@
 <?php
 session_start();
-include('conexao.php');
+include(__DIR__ . '/conexao.php');
 
 if(empty($_POST['email']) ||empty($_POST['senha'])  ) {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
 }
 
@@ -18,10 +18,10 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
     $_SESSION['email'] = $email;
-    header('Location: homepage.html');
+    header('Location: ../pages/homepage.html');
     exit();
 } else {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
 }
 ?>

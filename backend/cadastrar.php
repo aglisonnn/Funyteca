@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("conexao.php");
+include(__DIR__ . "/conexao.php");
 
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $email = mysqli_escape_string($conexao, trim($_POST['email']));
@@ -12,7 +12,7 @@ $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1) {
     $_SESSION['usuario_existe'] = true;
-    header('Location: cadastro.php');
+    header('Location: ../pages/cadastro.php');
     exit(); 
 }
 
@@ -24,6 +24,6 @@ if($conexao->query($sql) === TRUE){
 
 $conexao->close();
 
-header('Location: index.php');
+header('Location: ../index.php');
 exit();
 ?>

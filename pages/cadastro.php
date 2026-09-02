@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_cadastro.css">
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
 
     <title>Cadastro</title>
 </head>
@@ -13,16 +13,16 @@
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="images/minionsteca.png" alt="mulher sentada ao lado de um computador">
+            <img src="../assets/images/minionsteca.png" alt="mulher sentada ao lado de um computador">
         </div>
         <div class="form">
-            <form action="cadastrar.php" method="POST" id="formulario">
+            <form action="../backend/cadastrar.php" method="POST" id="formulario">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="index.php">Já possui uma conta? Logue aqui!</a></button>
+                        <button><a href="../index.php">Já possui uma conta? Logue aqui!</a></button>
                     </div>
                 </div>
                 <div class="input-group">
